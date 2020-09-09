@@ -1,5 +1,5 @@
 export default {
   title: 'dark',
-  primary: '#12ed8a',
+  primary: '#318fb5',
   secondary: '#b8fadc',
 }

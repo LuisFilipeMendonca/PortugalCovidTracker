@@ -1,5 +1,5 @@
 export default {
   title: 'light',
-  primary: '#802392',
-  secondary: '#e8c1f0',
+  primary: '#005086',
+  secondary: '#b0cac7',
 }

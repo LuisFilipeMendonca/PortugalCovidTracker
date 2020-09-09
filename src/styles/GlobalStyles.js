@@ -29,8 +29,7 @@ export const AppContainer = styled.div`
 `
 
 export const MainContainer = styled.div`
-  height: calc(100% - 60px);
-  overflow-y: auto;
+  padding-top: 125px;
 `
 
 export const ChartsContainer = styled.div`
@@ -51,9 +50,21 @@ export const SelectsContainer = styled.div`
   padding: 20px 0;
   border-bottom: 1px solid ${props => props.theme.primary};
   border-top: 1px solid ${props => props.theme.primary};
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: ${props => props.theme.title === 'light' ? '#fff' : '#000'};
+  transition: background .5s ease;
 `
 
 export const LoadingContainer = styled.div`
+  min-height: calc(100vh - 125px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   h2 {
     text-align: center;
     color: ${props => props.theme.primary};

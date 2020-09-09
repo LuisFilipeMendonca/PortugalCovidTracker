@@ -5,7 +5,7 @@ import { Header, HeaderTitle, Label, InputCheckbox, ThemeToggler } from './style
 
 const HeaderComponent = ({ themeToggler }) => (
   <Header>
-    <HeaderTitle>Covid Tracker</HeaderTitle>
+    <HeaderTitle>Portugal Covid Tracker</HeaderTitle>
     <Label htmlFor="themeToggler">
       <InputCheckbox type="checkbox" id="themeToggler" onChange={themeToggler} />
       <ThemeToggler />

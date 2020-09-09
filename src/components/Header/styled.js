@@ -6,6 +6,12 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: ${props => props.theme.title === 'light' ? '#fff' : '#000'};
+  transition: background .5s ease;
+  z-index: 1;
 `
 
 export const HeaderTitle = styled.h1`
