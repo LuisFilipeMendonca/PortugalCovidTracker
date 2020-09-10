@@ -25,7 +25,7 @@ export default createGlobalStyle`
 export const AppContainer = styled.div`
   background: ${props => props.theme.title === 'light' ? '#fff' : '#000'};
   transition: background .5s ease;
-  height: 100%;
+  min-height: 100%;
 `
 
 export const MainContainer = styled.div`
@@ -47,7 +47,7 @@ export const ChartsContainer = styled.div`
 export const SelectsContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 16px;
   border-bottom: 1px solid ${props => props.theme.primary};
   border-top: 1px solid ${props => props.theme.primary};
   position: fixed;

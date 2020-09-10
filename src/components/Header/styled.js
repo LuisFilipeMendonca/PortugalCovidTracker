@@ -16,6 +16,11 @@ export const Header = styled.header`
 
 export const HeaderTitle = styled.h1`
   color: ${props => props.theme.primary};
+  font-size: 1.5rem;
+
+  @media screen and (min-width: 576px) {
+    font-size: 2rem;
+  }
 `
 
 export const InputCheckbox = styled.input`
