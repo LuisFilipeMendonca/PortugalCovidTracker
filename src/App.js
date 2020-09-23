@@ -108,7 +108,7 @@ const App = () => {
                   <h2>Loading ...</h2>
                 </LoadingContainer>
               : (
-                <ChartsContainer>
+                <ChartsContainer noPadding={dataShow.length === 0}>
                   {
                     dataShow.length === 0
                       ? (<ErrorContainer>

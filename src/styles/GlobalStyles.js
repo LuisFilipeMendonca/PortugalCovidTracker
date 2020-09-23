@@ -37,10 +37,10 @@ export const ChartsContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding-top: 16px;
+  padding-top: ${props => props.noPadding ? '0' : '16px'};
 
   @media screen and (min-width: 1200px) {
-    padding-top: 64px;
+    padding-top: ${props => props.noPadding ? '0' : '64px'};
   }
 `
 
@@ -71,6 +71,4 @@ export const LoadingContainer = styled.div`
   }
 `
 
-export const ErrorContainer = styled(LoadingContainer)`
-  min-height: calc(100vh - 150px);
-`;
+export const ErrorContainer = styled(LoadingContainer)``;
