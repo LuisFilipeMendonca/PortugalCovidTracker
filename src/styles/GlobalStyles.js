@@ -71,4 +71,6 @@ export const LoadingContainer = styled.div`
   }
 `
 
-export const ErrorContainer = styled(LoadingContainer)``;
+export const ErrorContainer = styled(LoadingContainer)`
+  min-height: calc(100vh - 150px);
+`;
